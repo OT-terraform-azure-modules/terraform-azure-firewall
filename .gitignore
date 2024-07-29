@@ -1,0 +1,51 @@
+# Ignore Terraform .terraform directories
+**/.terraform/
+
+# Ignore any .tfstate files, which are often stored in the same directory as your .tf files
+*.tfstate
+*.tfstate.*
+
+# Ignore the crash log file that may appear if Terraform crashes
+crash.log
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore .tfvars files, which can contain sensitive data
+
+# Ignore override files as they are usually used to reassign variable values
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI backup files
+*.backup
+
+# Ignore .tfplan files that can be generated when running `terraform plan`
+*.tfplan
+
+# Ignore any .tfstate files that might be created if errors occur during the Terraform run
+terraform.tfstate.backup
+
+# Ignore .terraform.lock.hcl files, which can be generated when using the experimental plugin system
+.terraform.lock.hcl
+
+# Ignore .terraform/plugins directory which contains downloaded provider plugins
+.terraform/plugins/
+
+# Ignore .terraform/providers directory which contains provider configurations
+.terraform/providers/
+
+# Ignore .terraform/environment directory which can be used to define environments
+.terraform/environment/
+
+# Ignore the terraform binary itself (if placed in the project directory)
+terraform
+
+# Ignore logs
+*.log
+
+# Ignore VS Code specific files
+.vscode/
