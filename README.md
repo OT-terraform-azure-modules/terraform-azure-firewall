@@ -111,12 +111,12 @@ module "azure_firewall" {
 
 | Name                              | Description                                    | Type          | Default | Required |
 |-----------------------------------|------------------------------------------------|---------------|---------|----------|
-| `subnet_name`                     | Name of the subnet                             | 'list(list(string))'    | n/a     | yes      |
-| `subnet_address_prefixes`         | Address prefixes of the subnet                 | `list(list(string))'    | n/a     | yes      |
+| `subnet_name`                     | Name of the subnet                             |  `list(list(string))`   | n/a     | yes      |
+| `subnet_address_prefixes`         | Address prefixes of the subnet                 |  `list(list(string))`    | n/a     | yes      |
 | `service_endpoints`               | Service endpoints for the subnet               | `list(string)`| `[]`    | no       |
 | `forced_tunneling`                | Whether to force tunneling                     | `bool`        | `false` | no       |
 | `management_subnet_name`          | Name of the management subnet                  | `list(list(string))`      | []    | Optional      |
-| `management_subnet_address_prefixes`| Address prefixes of the management subnet   | `list(list(string))       `| []     | yes      |
+| `management_subnet_address_prefixes`| Address prefixes of the management subnet   | `list(list(string))`       | []     | yes      |
 | `management_subnet_service_endpoints`| Service endpoints for the management subnet| `list(string)`| `[]`    | no       |
 
 
